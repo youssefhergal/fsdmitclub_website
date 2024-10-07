@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import backImage from '/src/assets/back.jpeg';
+
 
 export const HeroContainer = styled.div`
     background: url("/src/assets/back.jpeg");
@@ -6,7 +8,7 @@ export const HeroContainer = styled.div`
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(47,78,161,0.6134103299522935) 60%), url("./assets/back.jpeg");
+    background: `linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(47,78,161,0.6134103299522935) 60%), url(${backImage})`,
 
 
     background-size: cover; /* Ensures the image covers the entire container */
