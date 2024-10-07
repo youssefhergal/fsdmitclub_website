@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nav, NavLink, NavbarContainer, NavLogo, NavItems, OpenPositionBtn, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
 import { FaBars } from 'react-icons/fa';
-import usmbaLogo from '../../assets/images/usmba_logo.jpg';
+import usmbaLogo from '../../assets/images/Fsdm_it_club_logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
         <NavbarContainer>
           <NavLogo to='/'>
             <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer' }}>
-              <img src={usmbaLogo} alt="Portfolio Logo" style={{ marginTop : '10px' , width: '110px', height: 'auto', backgroundColor: 'transparent' }} />
+              <img src={usmbaLogo} alt="Logo" style={{ marginTop : '10px' , width: '90px', height: 'auto', backgroundColor: 'transparent' }} />
             </a>
           </NavLogo>
 

@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-    background: url("/public/back.jpeg");
+    background: url("/src/assets/back.jpeg");
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 3%, rgba(47,78,161,0.6134103299522935) 55%) ,url("/public/back.jpeg");
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(47,78,161,0.6134103299522935) 60%), url("/src/assets/back.jpeg");
 
 
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */display: flex;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
     justify-content: center;
     position: relative;
     height: 100vh;
@@ -23,7 +24,7 @@ export const HeroContainer = styled.div`
         padding: 32px 16px;
     }
     z-index: 1;
-    
+
 `;
 
 
