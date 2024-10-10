@@ -11,6 +11,18 @@ const Container = styled.div`
     z-index: 1;
     padding: 20px;
     background:#dfecfa ;
+    @media (max-width: 960px) {
+        height: 170vh;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    @media (max-width: 1060px) {
+        height: 210vh;
+        flex-direction: column;
+        align-items: center;
+
+    }
 `;
 
 const Wrapper = styled.div`
@@ -20,6 +32,7 @@ const Wrapper = styled.div`
     width: 100%;
     max-width: 1100px;
     gap: 40px; /* Spacing between the description and cards */
+
     @media (max-width: 960px) {
         flex-direction: column;
         align-items: center;
@@ -32,9 +45,11 @@ const CardsContainer = styled.div`
     gap: 30px;
     max-width: 500px;
     width: 100%;
+
     @media (max-width: 768px) {
         grid-template-columns: 1fr; /* Stack cards on mobile */
         justify-items: center;
+        order: 2; /* Move the cards after the description */
     }
 `;
 
@@ -42,8 +57,6 @@ const CardIcon = styled.div`
     font-size: 48px;
     color: #2f4ea1;
     margin-bottom: 12px;
-
-  
 `;
 
 const Card = styled.div`
@@ -65,19 +78,16 @@ const Card = styled.div`
         color: #f1f6fd; /* Change text color */
     }
 
-  
     @media (max-width: 768px) {
-        max-width: 300px;
+        width: 280px;
+        max-width: 350px;
     }
+    
 
     &:hover ${CardIcon} {
         color: #f1f6fd; /* Icon changes to card background color */
     }
-    
-    
 `;
-
-
 
 const CardText = styled.h3`
     font-size: 20px;
@@ -92,6 +102,7 @@ export const Title = styled.div`
     margin-bottom: 10px;
     @media (max-width: 768px) {
         font-size: 32px;
+        text-align: center;
     }
 `;
 
@@ -101,6 +112,8 @@ export const Desc = styled.div`
     color: ${({ theme }) => theme.black};
     @media (max-width: 768px) {
         font-size: 16px;
+        order: 1; /* Move the description to the top on mobile */
+        text-align: center;
     }
     padding-right: 20px;
     font-weight: bold;
@@ -134,8 +147,7 @@ const AboutOurClub = () => {
                 <div>
                     <Title>About Our Club</Title>
                     <Desc>
-                        The IT Club of the Faculty of Sciences at Fes (FSDMIT Club) brings together students who are passionate about information technology, innovation, and new technologies. The club aims to be a hub for individuals eager to apply their scientific knowledge, share their expertise, and collaborate with those drawn to the world of technology. In an era where IT plays a central role in shaping our modern culture, the club brings together a wide range of talents in programming, cybersecurity, data science, networking, and software development to create innovative and impactful solutions
-
+                        The IT Club of the Faculty of Sciences at Fes (FSDMIT Club) brings together students who are passionate about information technology, innovation, and new technologies. The club aims to be a hub for individuals eager to apply their scientific knowledge, share their expertise, and collaborate with those drawn to the world of technology. In an era where IT plays a central role in shaping our modern culture, the club brings together a wide range of talents in programming, cybersecurity, data science, networking, and software development to create innovative and impactful solutions.
                     </Desc>
                 </div>
             </Wrapper>

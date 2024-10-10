@@ -13,8 +13,10 @@ const CombinedContainer = styled.div`
   width: 100%;
   align-items: center;
   padding: 3rem 0;
-  height: 280px;
   background: white;
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const MainSection = styled.div`
@@ -23,6 +25,7 @@ const MainSection = styled.div`
   width: 100%;
   max-width: 1200px;
   gap: 4rem;
+
   @media (max-width: 960px) {
     flex-direction: column;
     align-items: center;
@@ -37,6 +40,12 @@ const FooterSection = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
+  padding: 1rem;
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 // Wrapper for the logo and description (aligned to the left)
@@ -44,6 +53,10 @@ const FooterLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 // Short description style
@@ -52,6 +65,9 @@ const Description = styled.p`
   color: #71abe9;
   margin-bottom: 1rem;
   max-width: 300px;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 // Section title styles
@@ -60,6 +76,9 @@ const SectionTitle = styled.h2`
   font-weight: 600;
   color: #2a437e;
   margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 // Updated Nav to be displayed vertically, and links are centered
@@ -69,6 +88,11 @@ const Nav = styled.nav`
   gap: 0.5rem;
   text-align: left;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    gap: 0.8rem;
+  }
 `;
 
 const NavLink = styled.a`
@@ -83,7 +107,7 @@ const NavLink = styled.a`
     font-weight: bold;
   }
   &:hover {
-    color:#2a437e;
+    color: #2a437e;
   }
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -96,6 +120,10 @@ const SubscribeForm = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const SubscribeInputContainer = styled.div`
@@ -105,6 +133,10 @@ const SubscribeInputContainer = styled.div`
   border-radius: 8px;
   padding: 8px;
   background-color: #fff;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const SubscribeInput = styled.input`
@@ -115,6 +147,11 @@ const SubscribeInput = styled.input`
   color: #71abe9;
   width: 200px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 `;
 
 const SubscribeButton = styled.button`
@@ -128,6 +165,11 @@ const SubscribeButton = styled.button`
   &:hover {
     background-color: #2a437e;
   }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 40%;
+  }
 `;
 
 // Follow Us section for social media icons (LinkedIn and Instagram only)
@@ -135,6 +177,10 @@ const FollowUsSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const FollowUsText = styled.h3`
@@ -146,6 +192,10 @@ const SocialMediaIcons = styled.div`
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const SocialMediaIcon = styled.a`
@@ -174,12 +224,12 @@ const Copyright = styled.p`
 `;
 
 const CopyrightLink = styled.a`
-  color: #000000; /* Blue color for the link */
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
 
   &:hover {
-    color:#2f4ea1;
+    color: #2f4ea1;
   }
 `;
 

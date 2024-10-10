@@ -7,8 +7,6 @@ export const HeroContainer = styled.div`
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(47,78,161,0.6134103299522935) 60%), url("/src/assets/back.jpeg");
-
-
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -17,6 +15,19 @@ export const HeroContainer = styled.div`
     position: relative;
     height: 100vh;
     padding: 20px 30px 100px;
+
+    /* Animation */
+    animation: backgroundScroll 10s ease-in-out infinite; /* 10s duration, infinite repeat */
+
+    @keyframes backgroundScroll {
+        0% {
+            background-position: center;
+        }
+        100% {
+            background-position: right center;
+        }
+    }
+
     @media (max-width: 960px) {
         padding: 66px 16px;
     }
@@ -24,32 +35,32 @@ export const HeroContainer = styled.div`
         padding: 32px 16px;
     }
     z-index: 1;
+    
+   
 
 `;
 
 
 export const HeroBg = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: end;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 1360px;
-  overflow: hidden;
-  padding: 0 30px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1360px;
+    overflow: hidden;
+    padding: 0 30px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 
-  @media (max-width: 960px) {
-    justify-content: center;
-    padding: 0 0px;
-  }
+    @media (max-width: 960px) {
+        justify-content: center;
+        padding: 0 0px;
+    }
 `;
 
 export const HeroInnerContainer = styled.div`

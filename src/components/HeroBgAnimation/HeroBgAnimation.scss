@@ -1,0 +1,30 @@
+@keyframes infinite-spinning {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) translateY(40px);
+  }
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2) translateY(-60px);
+  }
+}
+
+@for $i from 0 through 36 {
+  g[clip-path*="cliphero#{$i}"] {
+    transform-origin: #{random(100)} #{70 - random(30)} !important;
+    animation: infinite-spinning 10s infinite;
+    animation-delay: #{random(1000) * 0.01}s;
+  }
+  g[clip-path*="clipherom#{$i}"] {
+    transform-origin: #{random(100)} #{70 - random(30)} !important;
+    animation: infinite-spinning 12s infinite;
+    animation-delay: #{random(800) * 0.01}s;
+  }
+}

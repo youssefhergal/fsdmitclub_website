@@ -133,13 +133,13 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: #1e2b4d;
+    background: #ffffff;
     transition: all 0.6s ease-in-out;
-    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+    transform: ${({isOpen}) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+    opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
+    z-index: ${({isOpen}) => (isOpen ? '1000' : '-1000')};
 
 `
 
@@ -155,7 +155,7 @@ export const MobileMenuItems = styled.ul`
 `
 
 export const MobileMenuLink = styled(LinkR)`
-    color: #1e2b4d;
+    color: #ffffff;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -177,7 +177,7 @@ export const MobileMenuButton = styled.a`
     align-items: center;
     height: 70%;
     border-radius: 20px;
-    color: #ffffff;
+    color: #425dd2;
     cursor: pointer;
     padding: 0 20px;
     font-weight: 500;
@@ -185,7 +185,7 @@ export const MobileMenuButton = styled.a`
     font-size: 16px;
     transition: all 0.6s ease-in-out;
 
-    :hover {
+    &:hover {
         background: #1e2b4d;
         color: white;
     }

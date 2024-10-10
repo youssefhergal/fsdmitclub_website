@@ -10,31 +10,34 @@ import 'slick-carousel/slick/slick.css'; // Slick styles
 import 'slick-carousel/slick/slick-theme.css'; // Slick theme styles
 
 const Events = ({ openModal, setOpenModal }) => {
-  // Configuration for React Slick
   const sliderSettings = {
-    dots: true, // Show dots (pagination)
-    infinite: true, // Infinite scrolling
-    speed: 500, // Transition speed
-    slidesToShow: 3, // Show 3 slides at a time on large screens
-    slidesToScroll: 1, // Scroll one slide at a time
-    autoplay: true, // Autoplay functionality
-    autoplaySpeed: 3000, // Autoplay speed
-    arrows: true, // Show next/prev arrows
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
     responsive: [
       {
-        breakpoint: 960, // Breakpoint for medium screens
+        breakpoint: 1060, // Breakpoint for medium screens
         settings: {
           slidesToShow: 2, // Show 2 slides on medium screens
+          centreMode:true,
         },
       },
       {
-        breakpoint: 640, // Breakpoint for small screens
+        breakpoint: 750, // Breakpoint for small screens
         settings: {
           slidesToShow: 1, // Show 1 slide on small screens
+          centerMode: true, // Enable center mode
+          centerPadding: '0',
         },
       },
     ],
   };
+
 
   return (
       <Container id="events">
