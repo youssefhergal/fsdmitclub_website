@@ -7,7 +7,8 @@ import { events } from '../../data/constants';
 // Import React Slick and styles
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'; // Slick styles
-import 'slick-carousel/slick/slick-theme.css'; // Slick theme styles
+import 'slick-carousel/slick/slick-theme.css';
+import styled from "styled-components"; // Slick theme styles
 
 const Events = ({ openModal, setOpenModal }) => {
   const sliderSettings = {
@@ -40,6 +41,7 @@ const Events = ({ openModal, setOpenModal }) => {
 
 
   return (
+      <>
       <Container id="events">
         <Wrapper>
           <Title>Past Events</Title>
@@ -55,8 +57,11 @@ const Events = ({ openModal, setOpenModal }) => {
             </Slider>
           </CardContainer>
         </Wrapper>
+        <br/>
       </Container>
-  );
+      </>
+
+);
 };
 
 export default Events;

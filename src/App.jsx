@@ -11,6 +11,7 @@ import ContactAndFooter from "./components/Footer/footer.jsx";
 import Sponsors from "./components/Sponsors/index.jsx";
 import ProjectDetails from "./components/EventsDetails/index.jsx";
 import Team from "./components/Team/index.jsx";
+import {Title} from "@mui/icons-material";
 
 const Body = styled.div`
     width: 100%;
@@ -20,6 +21,9 @@ const Body = styled.div`
 const Wrapper = styled.div`
     width: 100%;
 `;
+
+
+
 
 function App() {
     const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -35,9 +39,10 @@ function App() {
                     <Counter />  {/* Render Counter once */}
                 </Wrapper>
                 <Events openModal={openModal} setOpenModal={setOpenModal} />
-                <Wrapper>
+
+
+
                     <Sponsors />
-                </Wrapper>
                 <ContactAndFooter />
                 {openModal.state &&
                     <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />

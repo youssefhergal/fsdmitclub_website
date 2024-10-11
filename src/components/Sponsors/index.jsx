@@ -1,23 +1,21 @@
 // Sponsors.jsx
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import fsdmImage from '../../assets/images/usmba_logo.jpg';
+import fsdmImage from '../../assets/images/2.png';
 import datacampImage from '../../assets/images/DC_Donates_logo_inverted.png';
-import fsdmitcImage from '../../assets/images/Fsdm_it_club_logo.png';
-import fsFesImage from '../../assets/images/Fsdm_it_club_logo.png';
+import fsdmitcImage from '../../assets/images/3.png';
 
 const Sponsors = () => {
     // Liste des sponsors avec des images et des liens
     const sponsors = [
         { id: 1, image: fsdmImage, link: 'https://www.fsdm.usmba.ac.ma/' },
-        { id: 2, image: fsFesImage, link: 'https://www.fsdm.usmba.ac.ma/' },
         { id: 3, image: datacampImage, link: 'https://www.datacamp.com/donates' },
         { id: 4, image: fsdmitcImage, link: 'https://fsdmitclub-website.vercel.app/' },
 
     ];
 
     // Dupliquez la liste des sponsors pour une boucle infinie
-    const duplicatedSponsors = [...sponsors ,...sponsors,...sponsors, ...sponsors , ...sponsors , ...sponsors , ...sponsors , ...sponsors , ...sponsors]; // Duplication pour boucle continue
+    const duplicatedSponsors = [...sponsors ,...sponsors ,...sponsors,...sponsors, ...sponsors , ...sponsors , ...sponsors , ...sponsors , ...sponsors , ...sponsors]; // Duplication pour boucle continue
 
     return (
         <Container>
@@ -48,7 +46,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 60px 0;
-    background:  #2f4ea1;
+    background:  #004AAD;
     height: 28vh;
     width: 100%;
     color: azure;
@@ -74,6 +72,17 @@ const Slider = styled.div`
 
     &:hover {
         animation-play-state: paused; /* Pause l'animation au survol */
+    }
+`;
+
+export const Title1 = styled.div`
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+    margin: 0 auto ;
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        font-size: 32px;
     }
 `;
 
