@@ -19,7 +19,7 @@ const HeroSection = () => {
                         <SubTitle>
                             Innovation meets passion at the FSDMIT Club—where ideas become reality.
                         </SubTitle>
-                        <JoinBtn href={"https://forms.gle/2f1jWUSyweME7Sgd8"} target='display'>Join Now</JoinBtn>
+                        <JoinBtn href={"https://forms.gle/WJg3FgvhNpSLKQoq8"} target='display'>Join Now</JoinBtn>
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
