@@ -34,7 +34,7 @@
 - **Vercel**: A platform for hosting and deploying web applications.
 
 ## Installation
-To run this portfolio locally, follow these steps:
+To run this website locally, follow these steps:
 
 1. Clone the repository:
     ```bash
