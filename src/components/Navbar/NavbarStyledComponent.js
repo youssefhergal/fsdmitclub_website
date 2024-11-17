@@ -7,8 +7,8 @@ export const Nav = styled.div`
 	align-items: center;
 	justify-content: center;
 	font-size: 1rem;
-	position: sticky;
 	top: 0;
+	position: sticky;
 	z-index: 10;
 	@media (max-width: 960px) {
 		trastion: 0.8s all ease;
@@ -64,6 +64,8 @@ export const NavLink = styled.a`
 	text-decoration: none;
 	&:hover {
 		color: #071c54;
+		-webkit-text-stroke-width: 0;
+		text-stroke-width: 0;
 	}
 
 	-webkit-text-stroke: 1px #071c5490;

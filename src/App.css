@@ -12,6 +12,15 @@ body {
 	scroll-behavior: smooth;
 	height: 100%;
 }
+
+.nav-overlayed {
+	background: white;
+}
+.nav-overlayed .nav-link {
+	color: #071c54;
+	-webkit-text-stroke-width: 0;
+	text-stroke-width: 0;
+}
 .bordered-text {
 	--_stroke-clr: rgb(0, 0, 0);
 	--_stroke-width: 2px;

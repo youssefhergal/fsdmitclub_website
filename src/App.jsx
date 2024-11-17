@@ -12,10 +12,9 @@ import Navbar from "./components/Navbar/navbar.jsx";
 import Sponsors from "./components/Sponsors/index.jsx";
 import Team from "./components/Team/index.jsx";
 import backImage from "/src/assets/background.jpg";
-const Body = styled.div`
+const Root = styled.main`
 	width: 100%;
 	overflow-x: hidden;
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background: linear-gradient(
@@ -24,7 +23,9 @@ const Body = styled.div`
 			rgba(47, 78, 161, 0.6134103299522935) 60%
 		),
 		url(${backImage});
-	animation: backgroundScroll 10s ease-in-out infinite alternate;
+	background-attachment: fixed;
+	background-size: cover;
+	/*animation: backgroundScroll 10s ease-in-out infinite alternate;*/
 
 	@keyframes backgroundScroll {
 		0% {
@@ -34,6 +35,10 @@ const Body = styled.div`
 			background-position: right center;
 		}
 	}
+`;
+const Body = styled.div`
+	width: 100%;
+	overflow-x: hidden;
 `;
 
 const Wrapper = styled.div`
@@ -45,25 +50,27 @@ function App() {
 
 	return (
 		<Router>
-			<Body>
+			<Root>
 				<Navbar />
-				<HeroSection />
-				<Wrapper>
-					<AboutOurClub />
-					<Team />
-					<Counter /> {/* Render Counter once */}
-				</Wrapper>
-				<Events openModal={openModal} setOpenModal={setOpenModal} />
+				<Body>
+					<HeroSection />
+					<Wrapper>
+						<AboutOurClub />
+						<Team />
+						<Counter /> {/* Render Counter once */}
+					</Wrapper>
+					<Events openModal={openModal} setOpenModal={setOpenModal} />
 
-				<Sponsors />
-				<ContactAndFooter />
-				{openModal.state && (
-					<ProjectDetails
-						openModal={openModal}
-						setOpenModal={setOpenModal}
-					/>
-				)}
-			</Body>
+					<Sponsors />
+					<ContactAndFooter />
+					{openModal.state && (
+						<ProjectDetails
+							openModal={openModal}
+							setOpenModal={setOpenModal}
+						/>
+					)}
+				</Body>
+			</Root>
 		</Router>
 	);
 }

@@ -49,11 +49,21 @@ const Navbar = () => {
 					/>
 				</MobileIcon>
 				<NavItems>
-					<NavLink href='#'>Home</NavLink>
-					<NavLink href='#about'>About</NavLink>
-					<NavLink href='#team'>Team</NavLink>
-					<NavLink href='#events'>Events</NavLink>
-					<NavLink href='#program'>Program</NavLink>
+					<NavLink className='nav-link' href='#'>
+						Home
+					</NavLink>
+					<NavLink className='nav-link' href='#about'>
+						About
+					</NavLink>
+					<NavLink className='nav-link' href='#team'>
+						Team
+					</NavLink>
+					<NavLink className='nav-link' href='#events'>
+						Events
+					</NavLink>
+					<NavLink className='nav-link' href='#program'>
+						Program
+					</NavLink>
 				</NavItems>
 				<ButtonContainer>
 					<OpenPositionBtn href={"#"} target='_blank'>
