@@ -68,11 +68,13 @@ export const HeroInnerContainer = styled.div`
 	height: 90vh;
 	@media (max-width: 960px) {
 		flex-direction: column;
+		height: 65vh;
 	}
 `;
 export const HeroLeftContainer = styled.div`
 	width: 100%;
 	order: 1;
+
 	@media (max-width: 960px) {
 		order: 2;
 		margin-bottom: 30px;
