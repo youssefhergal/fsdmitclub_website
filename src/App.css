@@ -21,6 +21,9 @@ body {
 	-webkit-text-stroke-width: 0;
 	text-stroke-width: 0;
 }
+.nav-overlayed .mobile-menu {
+	color: #071c54 !important;
+}
 .bordered-text {
 	--_stroke-clr: rgb(0, 0, 0);
 	--_stroke-width: 2px;

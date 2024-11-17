@@ -57,7 +57,7 @@ export const NavItems = styled.ul`
 
 export const NavLink = styled.a`
 	color: white;
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 1.2rem;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
@@ -67,8 +67,8 @@ export const NavLink = styled.a`
 		-webkit-text-stroke-width: 0;
 		text-stroke-width: 0;
 	}
+	-webkit-text-stroke: 1px #071c5480;
 
-	-webkit-text-stroke: 1px #071c5490;
 	&:active {
 		border-bottom: 2px solid white;
 	}

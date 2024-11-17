@@ -14,7 +14,6 @@ import Team from "./components/Team/index.jsx";
 import backImage from "/src/assets/background.jpg";
 const Root = styled.main`
 	width: 100%;
-	overflow-x: hidden;
 	background-position: center;
 	background-repeat: no-repeat;
 	background: linear-gradient(

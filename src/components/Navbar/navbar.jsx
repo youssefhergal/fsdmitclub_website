@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import fsdmItClubLogo from "../../assets/images/Fsdm_it_club_logo.png";
 import {
@@ -16,8 +16,27 @@ import {
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = React.useState(false);
+
+	const [scrolled, setScrolled] = React.useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const offset = window.scrollY;
+			if (offset > 200) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 	return (
-		<Nav>
+		<Nav className={`${scrolled ? "nav-overlayed" : ""}`}>
 			<NavbarContainer>
 				<NavLogo to='/'>
 					<a
@@ -41,7 +60,7 @@ const Navbar = () => {
 					</a>
 				</NavLogo>
 
-				<MobileIcon>
+				<MobileIcon className='mobile-menu'>
 					<FaBars
 						onClick={() => {
 							setIsOpen(!isOpen);
