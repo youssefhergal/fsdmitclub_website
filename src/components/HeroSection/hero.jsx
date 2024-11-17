@@ -14,7 +14,7 @@ const HeroSection = () => {
                 </HeroBg>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title><br /> {Bio.name}</Title>
+                        <Title><br /> FSDM IT & AI CLUB</Title>
 
                         <SubTitle>
                             Innovation meets passion at the FSDMIT Club—where ideas become reality.

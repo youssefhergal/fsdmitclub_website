@@ -137,21 +137,37 @@ export const Img = styled.img`
   }
 `;
 
-export const Title = styled.div`
-  font-weight: 700;
-  font-size: 50px;
-  color: ${({ theme }) => theme.black};
-  line-height: 68px;
-  @media (max-width: 960px) {
-    text-align: center;
-  }
 
-  @media (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 8px;
-  }
+
+export const Title = styled.div`
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Initial soft glow */
+
+    /* Glowing light animation */
+    animation: lightGlow 2s infinite alternate ease-in-out;
+
+    @keyframes lightGlow {
+        0% {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+        100% {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    @media (max-width: 960px) {
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 8px;
+    }
 `;
+
 
 
 
