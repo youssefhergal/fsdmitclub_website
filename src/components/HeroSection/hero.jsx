@@ -12,6 +12,8 @@ import {
 	Title,
 } from "./HeroStyle";
 
+// import Swiper from "swiper";
+import "swiper/css";
 const HeroSection = () => {
 	return (
 		<div id='about'>
@@ -21,7 +23,7 @@ const HeroSection = () => {
 				</HeroBg>
 				<HeroInnerContainer>
 					<HeroLeftContainer id='Left'>
-						<Title>
+						<Title className='bordered-text'>
 							<br /> {Bio.name}
 						</Title>
 
