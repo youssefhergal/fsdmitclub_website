@@ -44,10 +44,10 @@ export const HeroInnerContainer = styled.div`
 	align-items: center;
 	width: 100%;
 	max-width: 1100px;
-	height: 80vh;
+	height: 70vh;
 	@media (max-width: 960px) {
 		flex-direction: column;
-		height: 65vh;
+		height: 45vh;
 	}
 `;
 export const HeroLeftContainer = styled.div`
