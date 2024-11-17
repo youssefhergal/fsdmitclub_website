@@ -1,32 +1,11 @@
 import styled from "styled-components";
-import backImage from "/src/assets/back.jpeg";
 
 export const HeroContainer = styled.div`
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background: linear-gradient(
-			90deg,
-			rgba(255, 255, 255, 0.8) 24%,
-			rgba(47, 78, 161, 0.6134103299522935) 60%
-		),
-		url(${backImage});
 	display: flex;
 	justify-content: center;
 	position: relative;
 	height: 100vh;
 	padding: 20px 30px 100px;
-	animation: backgroundScroll 10s ease-in-out infinite alternate;
-
-	@keyframes backgroundScroll {
-		0% {
-			background-position: center;
-		}
-		100% {
-			background-position: right center;
-		}
-	}
-
 	@media (max-width: 960px) {
 		padding: 66px 16px;
 	}
@@ -65,7 +44,7 @@ export const HeroInnerContainer = styled.div`
 	align-items: center;
 	width: 100%;
 	max-width: 1100px;
-	height: 90vh;
+	height: 80vh;
 	@media (max-width: 960px) {
 		flex-direction: column;
 		height: 65vh;

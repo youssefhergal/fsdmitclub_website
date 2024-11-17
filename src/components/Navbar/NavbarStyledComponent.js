@@ -56,17 +56,19 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
-	color: #2f4ea1;
-	font-weight: 700;
+	color: white;
+	font-weight: 900;
+	font-size: 1.2rem;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
 	&:hover {
-		color: black;
+		color: #071c54;
 	}
 
-	&.active {
-		border-bottom: white;
+	-webkit-text-stroke: 1px #071c5490;
+	&:active {
+		border-bottom: 2px solid white;
 	}
 `;
 
@@ -76,11 +78,10 @@ export const OpenPositionBtn = styled.a`
 	display: flex;
 	align-items: center;
 	background: #2f4ea1;
-	height: 70%;
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
-	padding: 0 20px;
+	padding: 0.5rem 1.5rem;
 	font-weight: 500;
 	text-decoration: none;
 	font-size: 16px;
@@ -116,7 +117,7 @@ export const MobileIcon = styled.div`
 		transform: translate(-100%, 60%);
 		font-size: 1.5rem;
 		cursor: pointer;
-		color: #1e2b4d;
+		color: white;
 	}
 `;
 
@@ -126,11 +127,14 @@ export const MobileMenu = styled.div`
 	justify-content: center;
 	gap: 16px;
 	position: absolute;
-	top: 80px;
+	top: 0;
 	right: 0;
 	width: 100%;
-	padding: 12px 40px 24px 40px;
-	background: #ffffff;
+	height: 50vh;
+	padding: 40px 40px 24px 40px;
+	background: white;
+	border-bottom: 4px solid #1e2b4d;
+	/*disable mouse events*/
 	transition: all 0.6s ease-in-out;
 	transform: ${({ isOpen }) =>
 		isOpen ? "translateY(0)" : "translateY(-100%)"};

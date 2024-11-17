@@ -7,14 +7,10 @@
 	font-family: "Poppins", sans-serif;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
+html,
 body {
-	margin: 0px !important;
-	padding: 0;
-	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
+	height: 100%;
 }
 .bordered-text {
 	--_stroke-clr: rgb(0, 0, 0);

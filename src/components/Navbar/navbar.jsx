@@ -62,6 +62,18 @@ const Navbar = () => {
 				</ButtonContainer>
 				{isOpen && (
 					<MobileMenu isOpen={isOpen}>
+						<div>
+							<MobileIcon
+								style={{
+									color: "#1e2b4d",
+								}}>
+								<FaBars
+									onClick={() => {
+										setIsOpen(!isOpen);
+									}}
+								/>
+							</MobileIcon>
+						</div>
 						<MobileLink
 							href='#'
 							onClick={() => {
