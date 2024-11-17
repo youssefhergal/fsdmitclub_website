@@ -2,28 +2,21 @@ import styled from "styled-components";
 import backImage from "/src/assets/back.jpeg";
 
 export const HeroContainer = styled.div`
-	// background: url("/src/assets/back.jpeg");
-	background-size: cover; /* Ensures the image covers the entire container */
-	background-position: center; /* Centers the image */
-	background-repeat: no-repeat; /* Prevents the image from repeating */
-	background: rgb(255, 255, 255);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	background: linear-gradient(
 			90deg,
-			rgba(255, 255, 255, 1) 24%,
+			rgba(255, 255, 255, 0.8) 24%,
 			rgba(47, 78, 161, 0.6134103299522935) 60%
 		),
 		url(${backImage});
-	background-size: cover; /* Ensures the image covers the entire container */
-	background-position: center; /* Centers the image */
-	background-repeat: no-repeat; /* Prevents the image from repeating */
 	display: flex;
 	justify-content: center;
 	position: relative;
 	height: 100vh;
 	padding: 20px 30px 100px;
-
-	/* Animation */
-	animation: backgroundScroll 10s ease-in-out infinite; /* 10s duration, infinite repeat */
+	animation: backgroundScroll 10s ease-in-out infinite alternate;
 
 	@keyframes backgroundScroll {
 		0% {
