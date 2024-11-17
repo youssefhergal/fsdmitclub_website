@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import fsdmItClubLogo from "../../assets/images/Fsdm_it_club_logo.png";
 import {
 	ButtonContainer,
 	MobileIcon,
@@ -27,7 +28,16 @@ const Navbar = () => {
 							marginBottom: "20px",
 							cursor: "pointer",
 						}}>
-						{/* <img src={usmbaLogo} alt="Logo" style={{ marginTop : '10px' , width: '90px', height: 'auto', backgroundColor: 'transparent' }} /> */}
+						<img
+							src={fsdmItClubLogo}
+							alt='Logo'
+							style={{
+								marginTop: "10px",
+								width: "60px",
+								height: "auto",
+								backgroundColor: "transparent",
+							}}
+						/>
 					</a>
 				</NavLogo>
 
