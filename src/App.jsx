@@ -56,7 +56,7 @@ function App() {
 					<Wrapper>
 						<AboutOurClub />
 						<Team />
-						<Counter /> {/* Render Counter once */}
+						<Counter />
 					</Wrapper>
 					<Events openModal={openModal} setOpenModal={setOpenModal} />
 
