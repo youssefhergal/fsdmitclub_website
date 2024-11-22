@@ -1,18 +1,46 @@
 import styled from "styled-components";
 
+
+
+  
+import backImage2 from '/src/assets/fsdm_it_grp.jpg';
+
+
 export const HeroContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	position: relative;
-	height: 100vh;
-	padding: 20px 30px 100px;
-	@media (max-width: 960px) {
-		padding: 66px 16px;
-	}
-	@media (max-width: 640px) {
-		padding: 32px 16px;
-	}
-	z-index: 1;
+    background: url("/src/assets/back.jpeg");
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(47,78,161,0.6134103299522935) 60%), url(${backImage2});
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    padding: 20px 30px 100px;
+
+    /* Animation */
+    animation: backgroundScroll 10s ease-in-out infinite; /* 10s duration, infinite repeat */
+
+    @keyframes backgroundScroll {
+        0% {
+            background-position: center;
+        }
+        100% {
+            background-position: right center;
+        }
+    }
+
+    @media (max-width: 960px) {
+        padding: 66px 16px;
+    }
+    @media (max-width: 640px) {
+        padding: 32px 16px;
+    }
+    z-index: 1;
 `;
 
 export const HeroBg = styled.div`
