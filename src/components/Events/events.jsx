@@ -48,7 +48,7 @@ const Events = ({ openModal, setOpenModal }) => {
 					<Swiper
 						spaceBetween={20}
 						slidesPerView={3}
-						centeredSlides={true}
+						// centeredSlides={true}
 						modules={[Navigation, Pagination]} // Include necessary modules
 						loop={true} // Enable infinite loop
 						navigation // Enable navigation arrows
@@ -59,6 +59,7 @@ const Events = ({ openModal, setOpenModal }) => {
 								key={index + Math.random()}
 								style={{
 									width: "300px !important",
+									paddingBlock: "1rem",
 								}}>
 								<EventsCards
 									project={event}

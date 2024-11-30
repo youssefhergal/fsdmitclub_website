@@ -20,15 +20,15 @@ const Button = styled.button`
 const Card = styled.div`
 	height: 480px;
 	width: 100%;
-	background-color: #f1f6fd;
+	background-color: white;
 	cursor: pointer;
 	border-radius: 10px;
 	overflow: hidden;
-	padding: 26px 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
 	transition: all 0.5s ease-in-out;
+	box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.05);
 	&:hover {
 		transform: translateY(-10px);
 		filter: brightness(1.1);
@@ -104,8 +104,8 @@ const Avatar = styled.img`
 	border-radius: 50%;
 	margin-left: -10px;
 	background-color: ${({ theme }) => theme.white};
-	box-shadow: 0 0 10px #2a437e;
-	border: 3px solid #2a437e;
+	box-shadow: 0 0 2px #2a437e;
+	border: 1px solid #2a437e;
 `;
 
 const EventsCards = ({ project, setOpenModal }) => {
@@ -124,21 +124,25 @@ const EventsCards = ({ project, setOpenModal }) => {
 					alt={project.title}
 				/>
 			)}
-
-			<Details>
-				<Title>{project.title}</Title>
-				<Date>{project.date}</Date>
-				<Description>{project.description}</Description>
-			</Details>
-			<Members>
-				{project.member?.map((member, index) => (
-					<Avatar
-						key={index + Math.random()}
-						src={member.img}
-						alt={member.name}
-					/>
-				))}
-			</Members>
+			<div
+				style={{
+					padding: "10px",
+				}}>
+				<Details>
+					<Title>{project.title}</Title>
+					<Date>{project.date}</Date>
+					<Description>{project.description}</Description>
+				</Details>
+				<Members>
+					{project.member?.map((member, index) => (
+						<Avatar
+							key={index + Math.random()}
+							src={member.img}
+							alt={member.name}
+						/>
+					))}
+				</Members>
+			</div>
 		</Card>
 	);
 };

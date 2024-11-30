@@ -10,7 +10,7 @@ const Container = styled.div`
 	position: relative;
 	z-index: 1;
 	padding: 20px;
-	background: #dfecfa;
+	background: #f5faff;
 	@media (max-width: 960px) {
 		height: 170vh;
 		flex-direction: column;

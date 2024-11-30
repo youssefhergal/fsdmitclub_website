@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 	border-radius: 16px;
 	margin: 50px 12px;
 	height: min-content;
-	background-color: #dfecfa;
+	background-color: #f5faff;
 	color: #1e2b4d;
 	padding: 20px;
 	display: flex;

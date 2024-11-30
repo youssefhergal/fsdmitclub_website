@@ -220,7 +220,7 @@ const Copyright = styled.p`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-top: 1px solid #dfecfa;
+	border-top: 1px solid #f5faff;
 `;
 
 const CopyrightLink = styled.a`
