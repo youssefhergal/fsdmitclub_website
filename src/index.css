@@ -1,0 +1,748 @@
+svg {
+	--clr-A-1: 227;
+	--clr-A-6: 228;
+	--clr-A-2: 229;
+	--clr-A-3: 230;
+	--clr-A-4: 226;
+	--clr-A-5: 240;
+	--clr-B-1: 342;
+	--clr-B-2: 344;
+	--clr-B-3: 345;
+	--clr-B-4: 346;
+	--clr-B-5: 347;
+}
+.color1 {
+	fill: hsl(0, 0%, 100%);
+}
+.color2 {
+	fill: hsl(var(--clr-B-3), 100%, 67%);
+}
+.color3 {
+	fill: hsl(var(--clr-A-6), 76%, 56%);
+}
+.color4 {
+	fill: hsl(var(--clr-A-6), 77%, 88%);
+}
+.color5 {
+	fill: hsl(var(--clr-B-3), 100%, 66%);
+}
+.color6 {
+	fill: hsl(var(--clr-A-6), 77%, 75%);
+}
+.color7 {
+	fill: hsl(var(--clr-A-6), 77%, 59%);
+}
+.color8 {
+	fill: hsl(var(--clr-A-6), 76%, 88%);
+}
+.color9 {
+	fill: hsl(var(--clr-B-3), 100%, 80%);
+}
+.color10 {
+	fill: hsl(var(--clr-B-4), 100%, 94%);
+}
+.color11 {
+	fill: hsl(var(--clr-B-3), 100%, 85%);
+}
+.color12 {
+	fill: hsl(var(--clr-A-6), 77%, 81%);
+}
+.color13 {
+	fill: hsl(var(--clr-B-3), 100%, 68%);
+}
+.color14 {
+	fill: hsl(var(--clr-B-3), 100%, 84%);
+}
+.color15 {
+	fill: hsl(var(--clr-B-3), 100%, 66%);
+}
+.color16 {
+	fill: hsl(var(--clr-B-3), 100%, 61%);
+}
+.color17 {
+	fill: hsl(var(--clr-B-3), 100%, 72%);
+}
+.color18 {
+	fill: hsl(var(--clr-B-3), 100%, 63%);
+}
+.color19 {
+	fill: hsl(var(--clr-B-4), 100%, 88%);
+}
+.color20 {
+	fill: hsl(var(--clr-B-3), 100%, 79%);
+}
+.color21 {
+	fill: hsl(var(--clr-B-3), 100%, 87%);
+}
+.color22 {
+	fill: hsl(var(--clr-B-5), 100%, 99%);
+}
+.color23 {
+	fill: hsl(var(--clr-B-3), 100%, 84%);
+}
+.color24 {
+	fill: hsl(var(--clr-B-3), 100%, 77%);
+}
+.color25 {
+	fill: hsl(var(--clr-B-3), 100%, 82%);
+}
+.color26 {
+	fill: hsl(var(--clr-B-4), 100%, 90%);
+}
+.color27 {
+	fill: hsl(var(--clr-B-3), 100%, 60%);
+}
+.color28 {
+	fill: hsl(var(--clr-B-4), 100%, 94%);
+}
+.color29 {
+	fill: hsl(var(--clr-B-3), 100%, 69%);
+}
+.color30 {
+	fill: hsl(var(--clr-A-6), 76%, 79%);
+}
+.color31 {
+	fill: hsl(var(--clr-B-3), 100%, 66%);
+}
+.color32 {
+	fill: hsl(var(--clr-B-3), 100%, 68%);
+}
+.color33 {
+	fill: hsl(var(--clr-A-6), 76%, 50%);
+}
+.color34 {
+	fill: hsl(var(--clr-A-6), 76%, 78%);
+}
+.color35 {
+	fill: hsl(var(--clr-B-4), 100%, 78%);
+}
+.color36 {
+	fill: hsl(var(--clr-B-4), 100%, 95%);
+}
+.color37 {
+	fill: hsl(var(--clr-A-6), 77%, 82%);
+}
+.color38 {
+	fill: hsl(var(--clr-A-5), 100%, 99%);
+}
+.color39 {
+	fill: hsl(var(--clr-B-3), 100%, 78%);
+}
+.color40 {
+	fill: hsl(var(--clr-B-4), 100%, 83%);
+}
+.color41 {
+	fill: hsl(var(--clr-B-3), 100%, 91%);
+}
+.color42 {
+	fill: hsl(var(--clr-B-3), 100%, 84%);
+}
+.color43 {
+	fill: hsl(var(--clr-A-1), 76%, 83%);
+}
+.color44 {
+	fill: hsl(var(--clr-A-6), 75%, 93%);
+}
+.color45 {
+	fill: hsl(var(--clr-A-6), 77%, 63%);
+}
+.color46 {
+	fill: hsl(var(--clr-B-5), 100%, 97%);
+}
+.color47 {
+	fill: hsl(var(--clr-B-4), 100%, 88%);
+}
+.color48 {
+	fill: hsl(var(--clr-B-3), 100%, 93%);
+}
+.color49 {
+	fill: hsl(var(--clr-B-3), 100%, 81%);
+}
+.color50 {
+	fill: hsl(var(--clr-B-3), 100%, 67%);
+}
+.color51 {
+	fill: hsl(var(--clr-A-6), 77%, 64%);
+}
+.color52 {
+	fill: hsl(var(--clr-A-6), 76%, 54%);
+}
+.color53 {
+	fill: hsl(var(--clr-B-3), 100%, 84%);
+}
+.color54 {
+	fill: hsl(var(--clr-A-6), 76%, 58%);
+}
+.color55 {
+	fill: hsl(var(--clr-A-6), 77%, 80%);
+}
+.color56 {
+	fill: hsl(var(--clr-B-3), 100%, 65%);
+}
+.color57 {
+	fill: hsl(var(--clr-A-6), 77%, 56%);
+}
+.color58 {
+	fill: hsl(var(--clr-A-6), 76%, 94%);
+}
+.color59 {
+	fill: hsl(var(--clr-A-6), 77%, 61%);
+}
+.color60 {
+	fill: hsl(var(--clr-A-6), 76%, 79%);
+}
+.color61 {
+	fill: hsl(var(--clr-A-1), 76%, 89%);
+}
+.color62 {
+	fill: hsl(var(--clr-A-6), 77%, 75%);
+}
+.color63 {
+	fill: hsl(var(--clr-B-3), 100%, 83%);
+}
+.color64 {
+	fill: hsl(var(--clr-A-6), 76%, 86%);
+}
+.color65 {
+	fill: hsl(var(--clr-B-4), 100%, 95%);
+}
+.color66 {
+	fill: hsl(var(--clr-A-6), 77%, 51%);
+}
+.color67 {
+	fill: hsl(var(--clr-B-4), 100%, 98%);
+}
+.color68 {
+	fill: hsl(var(--clr-B-3), 100%, 79%);
+}
+.color69 {
+	fill: hsl(var(--clr-B-3), 100%, 90%);
+}
+.color70 {
+	fill: hsl(var(--clr-B-3), 100%, 92%);
+}
+.color71 {
+	fill: hsl(var(--clr-B-3), 100%, 66%);
+}
+.color72 {
+	fill: hsl(var(--clr-A-6), 77%, 62%);
+}
+.color73 {
+	fill: hsl(var(--clr-A-6), 77%, 82%);
+}
+.color74 {
+	fill: hsl(var(--clr-A-6), 76%, 60%);
+}
+.color75 {
+	fill: hsl(var(--clr-A-6), 77%, 50%);
+}
+.color76 {
+	fill: hsl(var(--clr-B-3), 100%, 72%);
+}
+.color77 {
+	fill: hsl(var(--clr-B-3), 100%, 63%);
+}
+.color78 {
+	fill: hsl(var(--clr-B-3), 100%, 76%);
+}
+.color79 {
+	fill: hsl(var(--clr-B-3), 100%, 61%);
+}
+.color80 {
+	fill: hsl(var(--clr-B-3), 100%, 92%);
+}
+.color81 {
+	fill: hsl(var(--clr-A-3), 76%, 95%);
+}
+.color82 {
+	fill: hsl(var(--clr-A-6), 77%, 55%);
+}
+.color83 {
+	fill: hsl(var(--clr-B-3), 100%, 81%);
+}
+.color84 {
+	fill: hsl(var(--clr-A-6), 76%, 66%);
+}
+.color85 {
+	fill: hsl(var(--clr-A-4), 76%, 96%);
+}
+.color86 {
+	fill: hsl(var(--clr-B-3), 100%, 80%);
+}
+.color87 {
+	fill: hsl(var(--clr-B-3), 100%, 95%);
+}
+.color88 {
+	fill: hsl(var(--clr-B-5), 100%, 93%);
+}
+.color89 {
+	fill: hsl(var(--clr-B-4), 100%, 85%);
+}
+.color90 {
+	fill: hsl(var(--clr-B-3), 100%, 63%);
+}
+.color91 {
+	fill: hsl(var(--clr-B-3), 100%, 83%);
+}
+.color92 {
+	fill: hsl(var(--clr-B-3), 100%, 65%);
+}
+.color93 {
+	fill: hsl(var(--clr-A-6), 77%, 79%);
+}
+.color94 {
+	fill: hsl(var(--clr-A-1), 76%, 95%);
+}
+.color95 {
+	fill: hsl(var(--clr-A-6), 77%, 80%);
+}
+.color96 {
+	fill: hsl(var(--clr-A-6), 76%, 66%);
+}
+.color97 {
+	fill: hsl(var(--clr-B-3), 100%, 72%);
+}
+.color98 {
+	fill: hsl(var(--clr-A-6), 77%, 75%);
+}
+.color99 {
+	fill: hsl(var(--clr-B-3), 100%, 77%);
+}
+.color100 {
+	fill: hsl(var(--clr-A-2), 78%, 94%);
+}
+.color101 {
+	fill: hsl(var(--clr-A-6), 76%, 57%);
+}
+.color102 {
+	fill: hsl(var(--clr-B-3), 100%, 78%);
+}
+.color103 {
+	fill: hsl(var(--clr-B-3), 100%, 63%);
+}
+.color104 {
+	fill: hsl(var(--clr-A-6), 77%, 58%);
+}
+.color105 {
+	fill: hsl(var(--clr-A-6), 77%, 68%);
+}
+.color106 {
+	fill: hsl(var(--clr-A-6), 76%, 71%);
+}
+.color107 {
+	fill: hsl(var(--clr-A-6), 77%, 80%);
+}
+.color108 {
+	fill: hsl(var(--clr-A-6), 77%, 57%);
+}
+.color109 {
+	fill: hsl(var(--clr-B-5), 100%, 94%);
+}
+.color110 {
+	fill: hsl(var(--clr-B-3), 100%, 85%);
+}
+.color111 {
+	fill: hsl(var(--clr-A-6), 77%, 93%);
+}
+.color112 {
+	fill: hsl(var(--clr-B-3), 100%, 80%);
+}
+.color113 {
+	fill: hsl(var(--clr-A-6), 76%, 59%);
+}
+.color114 {
+	fill: hsl(var(--clr-A-6), 75%, 83%);
+}
+.color115 {
+	fill: hsl(var(--clr-B-3), 100%, 78%);
+}
+.color116 {
+	fill: hsl(var(--clr-A-6), 76%, 61%);
+}
+.color117 {
+	fill: hsl(var(--clr-A-1), 77%, 96%);
+}
+.color118 {
+	fill: hsl(var(--clr-B-3), 100%, 68%);
+}
+.color119 {
+	fill: hsl(var(--clr-B-3), 100%, 76%);
+}
+.color120 {
+	fill: hsl(var(--clr-B-2), 100%, 99%);
+}
+.color121 {
+	fill: hsl(var(--clr-B-3), 100%, 71%);
+}
+.color122 {
+	fill: hsl(var(--clr-B-4), 100%, 75%);
+}
+.color123 {
+	fill: hsl(var(--clr-B-3), 100%, 78%);
+}
+.color124 {
+	fill: hsl(var(--clr-B-3), 100%, 76%);
+}
+.color125 {
+	fill: hsl(var(--clr-A-6), 76%, 79%);
+}
+.color126 {
+	fill: hsl(var(--clr-B-3), 100%, 74%);
+}
+.color127 {
+	fill: hsl(var(--clr-B-4), 100%, 82%);
+}
+.color128 {
+	fill: hsl(var(--clr-A-6), 77%, 79%);
+}
+.color129 {
+	fill: hsl(var(--clr-B-4), 100%, 94%);
+}
+.color130 {
+	fill: hsl(var(--clr-A-6), 76%, 61%);
+}
+.color131 {
+	fill: hsl(var(--clr-B-3), 100%, 81%);
+}
+.color132 {
+	fill: hsl(var(--clr-B-3), 100%, 70%);
+}
+.color133 {
+	fill: hsl(var(--clr-A-6), 76%, 90%);
+}
+.color134 {
+	fill: hsl(var(--clr-A-6), 77%, 69%);
+}
+.color135 {
+	fill: hsl(var(--clr-B-3), 100%, 65%);
+}
+.color136 {
+	fill: hsl(var(--clr-B-3), 100%, 77%);
+}
+.color137 {
+	fill: hsl(var(--clr-A-6), 78%, 90%);
+}
+.color138 {
+	fill: hsl(var(--clr-A-6), 71%, 98%);
+}
+.color139 {
+	fill: hsl(var(--clr-B-3), 100%, 74%);
+}
+.color140 {
+	fill: hsl(var(--clr-A-6), 77%, 67%);
+}
+.color141 {
+	fill: hsl(var(--clr-A-6), 76%, 85%);
+}
+.color142 {
+	fill: hsl(var(--clr-B-3), 100%, 91%);
+}
+.color143 {
+	fill: hsl(var(--clr-A-6), 76%, 78%);
+}
+.color144 {
+	fill: hsl(var(--clr-B-3), 100%, 89%);
+}
+.color145 {
+	fill: hsl(var(--clr-A-6), 77%, 51%);
+}
+.color146 {
+	fill: hsl(var(--clr-A-6), 76%, 59%);
+}
+.color147 {
+	fill: hsl(var(--clr-A-6), 77%, 76%);
+}
+.color148 {
+	fill: hsl(var(--clr-B-3), 100%, 63%);
+}
+.color149 {
+	fill: hsl(var(--clr-A-6), 76%, 77%);
+}
+.color150 {
+	fill: hsl(var(--clr-A-2), 76%, 83%);
+}
+.color151 {
+	fill: hsl(var(--clr-A-6), 76%, 67%);
+}
+.color152 {
+	fill: hsl(var(--clr-B-4), 100%, 81%);
+}
+.color153 {
+	fill: hsl(var(--clr-B-3), 100%, 88%);
+}
+.color154 {
+	fill: hsl(var(--clr-A-6), 76%, 83%);
+}
+.color155 {
+	fill: hsl(var(--clr-A-6), 76%, 68%);
+}
+.color156 {
+	fill: hsl(var(--clr-A-6), 77%, 84%);
+}
+.color157 {
+	fill: hsl(var(--clr-B-3), 100%, 80%);
+}
+.color158 {
+	fill: hsl(var(--clr-A-6), 77%, 55%);
+}
+.color159 {
+	fill: hsl(var(--clr-B-3), 100%, 69%);
+}
+.color160 {
+	fill: hsl(var(--clr-A-6), 78%, 90%);
+}
+.color161 {
+	fill: hsl(var(--clr-A-1), 76%, 91%);
+}
+.color162 {
+	fill: hsl(var(--clr-B-3), 100%, 95%);
+}
+.color163 {
+	fill: hsl(var(--clr-A-6), 76%, 52%);
+}
+.color164 {
+	fill: hsl(var(--clr-B-3), 100%, 84%);
+}
+.color165 {
+	fill: hsl(var(--clr-A-2), 75%, 95%);
+}
+.color166 {
+	fill: hsl(var(--clr-A-6), 77%, 70%);
+}
+.color167 {
+	fill: hsl(var(--clr-B-4), 100%, 92%);
+}
+.color168 {
+	fill: hsl(var(--clr-B-3), 100%, 67%);
+}
+.color169 {
+	fill: hsl(var(--clr-B-3), 100%, 98%);
+}
+.color170 {
+	fill: hsl(var(--clr-A-6), 77%, 86%);
+}
+.color171 {
+	fill: hsl(var(--clr-A-1), 77%, 81%);
+}
+.color172 {
+	fill: hsl(var(--clr-A-6), 77%, 70%);
+}
+.color173 {
+	fill: hsl(var(--clr-A-6), 78%, 49%);
+}
+.color174 {
+	fill: hsl(var(--clr-A-6), 76%, 72%);
+}
+.color175 {
+	fill: hsl(var(--clr-A-6), 76%, 62%);
+}
+.color176 {
+	fill: hsl(var(--clr-A-6), 76%, 67%);
+}
+.color177 {
+	fill: hsl(var(--clr-B-5), 100%, 96%);
+}
+.color178 {
+	fill: hsl(var(--clr-B-3), 100%, 75%);
+}
+.color179 {
+	fill: hsl(var(--clr-A-6), 76%, 60%);
+}
+.color180 {
+	fill: hsl(var(--clr-A-6), 75%, 87%);
+}
+.color181 {
+	fill: hsl(var(--clr-A-6), 76%, 83%);
+}
+.color182 {
+	fill: hsl(var(--clr-B-3), 100%, 72%);
+}
+.color183 {
+	fill: hsl(var(--clr-A-6), 76%, 76%);
+}
+.color184 {
+	fill: hsl(var(--clr-A-6), 76%, 50%);
+}
+.color185 {
+	fill: hsl(var(--clr-B-3), 100%, 90%);
+}
+.color186 {
+	fill: hsl(var(--clr-A-6), 77%, 57%);
+}
+.color187 {
+	fill: hsl(var(--clr-B-3), 100%, 60%);
+}
+.color188 {
+	fill: hsl(var(--clr-B-3), 100%, 73%);
+}
+.color189 {
+	fill: hsl(var(--clr-A-1), 77%, 86%);
+}
+.color190 {
+	fill: hsl(var(--clr-A-6), 77%, 84%);
+}
+.color191 {
+	fill: hsl(var(--clr-A-6), 76%, 78%);
+}
+.color192 {
+	fill: hsl(var(--clr-B-4), 100%, 88%);
+}
+.color193 {
+	fill: hsl(var(--clr-B-3), 100%, 85%);
+}
+.color194 {
+	fill: hsl(var(--clr-A-6), 76%, 69%);
+}
+.color195 {
+	fill: hsl(var(--clr-A-6), 77%, 62%);
+}
+.color196 {
+	fill: hsl(var(--clr-B-3), 100%, 62%);
+}
+.color197 {
+	fill: hsl(var(--clr-B-2), 100%, 96%);
+}
+.color198 {
+	fill: hsl(var(--clr-A-6), 76%, 71%);
+}
+.color199 {
+	fill: hsl(var(--clr-A-6), 77%, 58%);
+}
+.color200 {
+	fill: hsl(var(--clr-B-1), 100%, 98%);
+}
+.color201 {
+	fill: hsl(var(--clr-A-6), 77%, 69%);
+}
+.color202 {
+	fill: hsl(var(--clr-A-6), 77%, 91%);
+}
+.color203 {
+	fill: hsl(var(--clr-A-6), 77%, 51%);
+}
+.color204 {
+	fill: hsl(var(--clr-B-3), 100%, 88%);
+}
+.color205 {
+	fill: hsl(var(--clr-B-3), 100%, 60%);
+}
+.color206 {
+	fill: hsl(var(--clr-A-6), 76%, 66%);
+}
+.color207 {
+	fill: hsl(var(--clr-A-6), 76%, 51%);
+}
+.color208 {
+	fill: hsl(var(--clr-B-3), 100%, 69%);
+}
+.color209 {
+	fill: hsl(var(--clr-B-3), 100%, 77%);
+}
+.color210 {
+	fill: hsl(var(--clr-B-3), 100%, 74%);
+}
+.color211 {
+	fill: hsl(var(--clr-B-3), 100%, 80%);
+}
+.color212 {
+	fill: hsl(var(--clr-B-5), 100%, 97%);
+}
+.color213 {
+	fill: hsl(var(--clr-B-3), 100%, 71%);
+}
+.color214 {
+	fill: hsl(var(--clr-A-6), 77%, 73%);
+}
+.color215 {
+	fill: hsl(var(--clr-A-6), 76%, 57%);
+}
+.color216 {
+	fill: hsl(var(--clr-A-6), 76%, 81%);
+}
+.color217 {
+	fill: hsl(var(--clr-B-3), 100%, 66%);
+}
+.color218 {
+	fill: hsl(var(--clr-A-1), 75%, 93%);
+}
+.color219 {
+	fill: hsl(var(--clr-B-4), 100%, 65%);
+}
+.color220 {
+	fill: hsl(var(--clr-B-2), 100%, 97%);
+}
+.color221 {
+	fill: hsl(var(--clr-B-4), 100%, 82%);
+}
+.color222 {
+	fill: hsl(var(--clr-A-1), 75%, 90%);
+}
+.color223 {
+	fill: hsl(var(--clr-B-4), 100%, 86%);
+}
+.color224 {
+	fill: hsl(var(--clr-B-3), 100%, 84%);
+}
+.color225 {
+	fill: hsl(var(--clr-A-6), 76%, 62%);
+}
+.color226 {
+	fill: hsl(var(--clr-B-3), 100%, 87%);
+}
+.color227 {
+	fill: hsl(var(--clr-A-6), 76%, 69%);
+}
+.color228 {
+	fill: hsl(var(--clr-A-6), 76%, 86%);
+}
+.color229 {
+	fill: hsl(var(--clr-B-3), 100%, 88%);
+}
+.color230 {
+	fill: hsl(var(--clr-A-6), 77%, 79%);
+}
+.color231 {
+	fill: hsl(var(--clr-A-6), 76%, 80%);
+}
+.color232 {
+	fill: hsl(var(--clr-B-3), 100%, 86%);
+}
+.color233 {
+	fill: hsl(var(--clr-A-1), 76%, 79%);
+}
+.color234 {
+	fill: hsl(var(--clr-B-4), 100%, 79%);
+}
+.color235 {
+	fill: hsl(var(--clr-B-2), 100%, 94%);
+}
+.color236 {
+	fill: hsl(var(--clr-B-4), 100%, 89%);
+}
+.color237 {
+	fill: hsl(var(--clr-A-6), 76%, 70%);
+}
+.color238 {
+	fill: hsl(var(--clr-A-6), 76%, 71%);
+}
+.color239 {
+	fill: hsl(var(--clr-B-3), 100%, 90%);
+}
+.color240 {
+	fill: hsl(var(--clr-B-3), 100%, 87%);
+}
+.color241 {
+	fill: hsl(var(--clr-B-4), 100%, 83%);
+}
+.color242 {
+	fill: hsl(var(--clr-B-3), 100%, 89%);
+}
+.color243 {
+	fill: hsl(var(--clr-A-6), 77%, 77%);
+}
+.color244 {
+	fill: hsl(var(--clr-B-3), 100%, 75%);
+}
+.color245 {
+	fill: hsl(var(--clr-A-6), 76%, 64%);
+}

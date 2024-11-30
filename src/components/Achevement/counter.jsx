@@ -2,7 +2,6 @@ import React from "react";
 import CountUp from "react-countup";
 import { FaMedal, FaProjectDiagram, FaTrophy, FaUsers } from "react-icons/fa";
 import styled from "styled-components";
-
 const Counter = () => {
 	const counters = [
 		{ title: "Prize", end: 4, icon: <FaTrophy /> },
@@ -14,7 +13,7 @@ const Counter = () => {
 	return (
 		<Container>
 			{counters.map((counter, index) => (
-				<CounterBox key={index}>
+				<CounterBox key={index + Math.random()}>
 					<IconWrapper>{counter.icon}</IconWrapper>
 					<CountUp end={counter.end} duration={3} suffix='+' />
 					<h4
