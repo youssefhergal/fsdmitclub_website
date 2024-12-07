@@ -73,8 +73,6 @@ const Container = styled.div`
 	height: 28vh;
 	width: 100%;
 	color: azure;
-	border: 1px solid #262c40;
-	border-radius: 8px;
 	overflow: hidden;
 	position: relative;
 	margin-top: -150px;

@@ -1,6 +1,7 @@
 export function PlaceHolderImage({
 	hueA = Math.floor(Math.random() * 360),
 	hueB = Math.floor(Math.random() * 360),
+	...rest
 }) {
 	const cssVars = {
 		"--clr-A-4": hueA,
@@ -17,6 +18,7 @@ export function PlaceHolderImage({
 	};
 	return (
 		<svg
+			{...rest}
 			style={{
 				...cssVars,
 			}}

@@ -7,7 +7,7 @@ export const Container = styled.div`
 	position: relative;
 	z-index: 0;
 	align-items: center;
-	height: 130vh;
+	padding: 3rem 0;
 `;
 
 export const Wrapper = styled.div`

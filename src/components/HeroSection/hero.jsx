@@ -13,7 +13,6 @@ import {
 } from "./HeroStyle";
 
 // import Swiper from "swiper";
-import "swiper/css";
 const HeroSection = () => {
 	return (
 		<div id='about'>

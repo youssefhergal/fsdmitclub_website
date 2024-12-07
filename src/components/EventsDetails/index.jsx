@@ -1,7 +1,8 @@
 import { CloseRounded, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { PlaceHolderImage } from "../../assets/svgs/placeholder";
 
 const Container = styled.div`
 	width: 100%;
@@ -152,6 +153,7 @@ const Button = styled.a`
 `;
 
 const index = ({ openModal, setOpenModal }) => {
+	const [loadingError, setLoadingError] = useState(false);
 	const project = openModal?.project;
 	return (
 		<Modal
@@ -170,7 +172,18 @@ const index = ({ openModal, setOpenModal }) => {
 							setOpenModal({ state: false, project: null })
 						}
 					/>
-					<Image src={project.image} />
+					{loadingError ? (
+						<PlaceHolderImage />
+					) : (
+						<Image
+							src={project.image}
+							onError={(e) => {
+								setLoadingError(true);
+								e.target.onerror = null;
+							}}
+							alt={project.title}
+						/>
+					)}
 					<Title>{project?.title}</Title>
 					<Date>{project.date}</Date>
 

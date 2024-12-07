@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { PlaceHolderImage } from "../../assets/svgs/placeholder";
+import CardAvatar from "../Avatars/CardAvatar.jsx";
 
 const Button = styled.button`
 	display: none;
@@ -18,7 +19,7 @@ const Button = styled.button`
 `;
 
 const Card = styled.div`
-	height: 480px;
+	height: min(480px, 100%);
 	width: 100%;
 	background-color: white;
 	cursor: pointer;
@@ -29,6 +30,7 @@ const Card = styled.div`
 	gap: 14px;
 	transition: all 0.5s ease-in-out;
 	box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.05);
+	scroll-snap-align: center;
 	&:hover {
 		transform: translateY(-10px);
 		filter: brightness(1.1);
@@ -98,25 +100,23 @@ const Members = styled.div`
 	padding-left: 10px;
 `;
 
-const Avatar = styled.img`
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	margin-left: -10px;
-	background-color: ${({ theme }) => theme.white};
-	box-shadow: 0 0 2px #2a437e;
-	border: 1px solid #2a437e;
-`;
-
 const EventsCards = ({ project, setOpenModal }) => {
 	const [loadingError, setLoadingError] = useState(false);
 	return (
-		<Card onClick={() => setOpenModal({ state: true, project })}>
+		<Card
+			onClick={() =>
+				setOpenModal({
+					state: true,
+					project,
+					hues: { hueA, hueB },
+				})
+			}>
 			{loadingError ? (
-				<PlaceHolderImage />
+				<PlaceHolderImage className='card-image' />
 			) : (
 				<Image
 					src={project.image}
+					className='card-image'
 					onError={(e) => {
 						setLoadingError(true);
 						e.target.onerror = null;
@@ -135,10 +135,10 @@ const EventsCards = ({ project, setOpenModal }) => {
 				</Details>
 				<Members>
 					{project.member?.map((member, index) => (
-						<Avatar
+						<CardAvatar
 							key={index + Math.random()}
-							src={member.img}
-							alt={member.name}
+							src={member.image}
+							name={member.name}
 						/>
 					))}
 				</Members>

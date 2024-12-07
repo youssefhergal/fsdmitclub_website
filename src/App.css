@@ -57,3 +57,24 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: #626970;
 }
+
+.carousel {
+	/* background-color: #c01f1f; */
+	padding: 1rem;
+}
+.slide.selected {
+	margin-inline: 1.5rem !important;
+}
+.slide:not(.selected) {
+	opacity: 0.5;
+}
+
+.carousel-status {
+	background: rgba(0, 0, 0, 0.253);
+	font-size: 1.2rem !important;
+	border-radius: 0.5rem;
+}
+
+.dot {
+	background: rgba(0, 0, 0) !important;
+}
