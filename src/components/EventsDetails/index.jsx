@@ -3,6 +3,7 @@ import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { PlaceHolderImage } from "../../assets/svgs/placeholder";
+import CardAvatar from "../Avatars/CardAvatar";
 
 const Container = styled.div`
 	width: 100%;
@@ -194,7 +195,11 @@ const index = ({ openModal, setOpenModal }) => {
 							<Members>
 								{project?.member.map((member) => (
 									<Member>
-										<MemberImage src={member.img} />
+										<CardAvatar
+											src={member.img}
+											name={member.name}
+											alt={member.name}
+										/>
 										<MemberName>{member.name}</MemberName>
 										<a
 											href={member.linkedin}
@@ -211,7 +216,7 @@ const index = ({ openModal, setOpenModal }) => {
 						</>
 					)}
 					<ButtonGroup>
-						<Button dull href={project?.instagram} target='new'>
+						<Button href={project?.instagram} target='new'>
 							View more
 						</Button>
 					</ButtonGroup>

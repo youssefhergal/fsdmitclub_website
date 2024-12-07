@@ -18,7 +18,7 @@ const Events = ({ openModal, setOpenModal }) => {
 						showArrows
 						emulateTouch
 						infiniteLoop
-						showThumbs
+						showThumbs={false}
 						centerMode
 						stopOnHover
 						centerSlidePercentage={60}>

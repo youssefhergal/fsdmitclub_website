@@ -75,6 +75,12 @@ body {
 	border-radius: 0.5rem;
 }
 
+.slider-wrapper {
+	width: 100%;
+}
+.slider-wrapper * {
+	width: 100%;
+}
 .dot {
 	background: rgba(0, 0, 0) !important;
 }

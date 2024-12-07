@@ -20,11 +20,10 @@ const Button = styled.button`
 
 const Card = styled.div`
 	height: min(480px, 100%);
-	width: 100%;
+	width: 100% !important;
 	background-color: white;
 	cursor: pointer;
 	border-radius: 10px;
-	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
@@ -108,15 +107,13 @@ const EventsCards = ({ project, setOpenModal }) => {
 				setOpenModal({
 					state: true,
 					project,
-					hues: { hueA, hueB },
 				})
 			}>
 			{loadingError ? (
-				<PlaceHolderImage className='card-image' />
+				<PlaceHolderImage />
 			) : (
 				<Image
 					src={project.image}
-					className='card-image'
 					onError={(e) => {
 						setLoadingError(true);
 						e.target.onerror = null;
