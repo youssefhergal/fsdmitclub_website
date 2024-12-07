@@ -59,11 +59,12 @@ body {
 }
 
 .carousel {
-	/* background-color: #c01f1f; */
 	padding: 1rem;
 }
 .slide.selected {
 	margin-inline: 1.5rem !important;
+	min-width: 0;
+	width: 100%;
 }
 .slide:not(.selected) {
 	opacity: 0.5;

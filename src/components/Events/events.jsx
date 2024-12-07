@@ -16,12 +16,13 @@ const Events = ({ openModal, setOpenModal }) => {
 						useKeyboardArrows
 						autoPlay
 						showArrows
+						width={"100vw"}
 						emulateTouch
 						infiniteLoop
 						showThumbs={false}
-						centerMode
+						centerMode={window.innerWidth > 800}
 						stopOnHover
-						centerSlidePercentage={60}>
+						centerSlidePercentage={50}>
 						{events.map((event, index) => (
 							<EventsCards
 								key={event.id}
