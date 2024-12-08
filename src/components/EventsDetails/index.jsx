@@ -1,7 +1,9 @@
 import { CloseRounded, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { PlaceHolderImage } from "../../assets/svgs/placeholder";
+import CardAvatar from "../Avatars/CardAvatar";
 
 const Container = styled.div`
 	width: 100%;
@@ -23,7 +25,7 @@ const Wrapper = styled.div`
 	border-radius: 16px;
 	margin: 50px 12px;
 	height: min-content;
-	background-color: #dfecfa;
+	background-color: #f5faff;
 	color: #1e2b4d;
 	padding: 20px;
 	display: flex;
@@ -152,6 +154,7 @@ const Button = styled.a`
 `;
 
 const index = ({ openModal, setOpenModal }) => {
+	const [loadingError, setLoadingError] = useState(false);
 	const project = openModal?.project;
 	return (
 		<Modal
@@ -170,7 +173,18 @@ const index = ({ openModal, setOpenModal }) => {
 							setOpenModal({ state: false, project: null })
 						}
 					/>
-					<Image src={project.image} />
+					{loadingError ? (
+						<PlaceHolderImage />
+					) : (
+						<Image
+							src={project.image}
+							onError={(e) => {
+								setLoadingError(true);
+								e.target.onerror = null;
+							}}
+							alt={project.title}
+						/>
+					)}
 					<Title>{project?.title}</Title>
 					<Date>{project.date}</Date>
 
@@ -181,7 +195,11 @@ const index = ({ openModal, setOpenModal }) => {
 							<Members>
 								{project?.member.map((member) => (
 									<Member>
-										<MemberImage src={member.img} />
+										<CardAvatar
+											src={member.img}
+											name={member.name}
+											alt={member.name}
+										/>
 										<MemberName>{member.name}</MemberName>
 										<a
 											href={member.linkedin}
@@ -198,7 +216,7 @@ const index = ({ openModal, setOpenModal }) => {
 						</>
 					)}
 					<ButtonGroup>
-						<Button dull href={project?.instagram} target='new'>
+						<Button href={project?.instagram} target='new'>
 							View more
 						</Button>
 					</ButtonGroup>

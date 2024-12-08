@@ -22,7 +22,7 @@ const Navbar = () => {
 	useEffect(() => {
 		const handleScroll = () => {
 			const offset = window.scrollY;
-			if (offset > 200) {
+			if (offset > 100) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
 		};
 
 		window.addEventListener("scroll", handleScroll);
-
+		handleScroll();
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
@@ -39,25 +39,21 @@ const Navbar = () => {
 		<Nav className={`${scrolled ? "nav-overlayed" : ""}`}>
 			<NavbarContainer>
 				<NavLogo to='/'>
-					<a
+					<img
+						src={fsdmItClubLogo}
+						alt='Logo'
 						style={{
+							marginTop: "10px",
+							width: "60px",
+							height: "auto",
+							backgroundColor: "transparent",
 							display: "flex",
 							alignItems: "center",
 							color: "white",
 							marginBottom: "20px",
 							cursor: "pointer",
-						}}>
-						<img
-							src={fsdmItClubLogo}
-							alt='Logo'
-							style={{
-								marginTop: "10px",
-								width: "60px",
-								height: "auto",
-								backgroundColor: "transparent",
-							}}
-						/>
-					</a>
+						}}
+					/>
 				</NavLogo>
 
 				<MobileIcon className='mobile-menu'>
