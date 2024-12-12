@@ -62,12 +62,18 @@ body {
 	padding: 1rem;
 }
 .slide.selected {
-	margin-inline: 1.5rem !important;
 	min-width: 0;
 	width: 100%;
 }
+
 .slide:not(.selected) {
 	opacity: 0.5;
+}
+.carousel {
+	padding: 4rem 0 !important;
+}
+.slider {
+	gap: 1rem;
 }
 
 .carousel-status {
