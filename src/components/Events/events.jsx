@@ -22,7 +22,7 @@ const Events = ({ openModal, setOpenModal }) => {
 						showThumbs={false}
 						centerMode={window.innerWidth > 800}
 						stopOnHover
-						centerSlidePercentage={50}>
+						centerSlidePercentage={28}>
 						{events.map((event, index) => (
 							<EventsCards
 								key={event.id}

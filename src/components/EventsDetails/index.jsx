@@ -194,7 +194,7 @@ const index = ({ openModal, setOpenModal }) => {
 							<Label>Members</Label>
 							<Members>
 								{project?.member.map((member) => (
-									<Member>
+									<Member key={Math.random()}>
 										<CardAvatar
 											src={member.img}
 											name={member.name}
